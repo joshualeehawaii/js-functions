@@ -3,15 +3,17 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
-
+function numberToString(num){
+  return num.toString();
+}
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
-
+function increase(num){
+  return num + 1;
+}
 /**
  * Subtracts one from a given number.
  * @param {number} n
