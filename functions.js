@@ -204,14 +204,18 @@ function areEqual(a,b){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+ function incrementReviews(obj) {
 
-
+ }
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+ function combine(str1,str2){
+  return str1 + ' ' +  str2;
+ }
 
 
 /**
@@ -221,4 +225,9 @@ function areEqual(a,b){
  * @param {number} radius
  * @return {object} circle
  */
-
+ function createCircle(num){
+  var circle = {circumference: 2 * Math.PI * num,
+                area: Math.PI * num * num,
+                };
+  return circle;
+ }
