@@ -76,9 +76,23 @@ function divide(num1, num2){
  * @param {number} y
  * @return {number} the result
  */
- function calculate(operation,x,y){
-  console.log(); //write out the equation
-  return add(x,y);
+ function calculate(operation,num1,num2){
+  if (operation === 'add'){
+    console.log(num1 + ' ' + '+' + ' ' + num2 + ' ' + "=" + ' ' + add(num1,num2));
+    return add(num1,num2);
+  }
+  else if (operation === 'subtract'){
+    console.log(num1 + ' ' + '-' + ' ' + num2 + ' ' + "=" + ' ' + subtract(num1,num2));
+    return subtract(num1,num2);
+  }
+  else if (operation === 'multiply'){
+    console.log(num1 + ' ' + '*' + ' ' + num2 + ' ' + "=" + ' ' + multiply(num1,num2));
+    return multiply(num1,num2);
+  }
+  else if (operation === 'divide'){
+    console.log(num1 + ' ' + '/' + ' ' + num2 + ' ' + "=" + ' ' + divide(num1,num2));
+    return divide(num1,num2);
+  }
  }
 /**
  * Returns true if `a` is greater than `b`.
