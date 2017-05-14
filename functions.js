@@ -19,47 +19,53 @@ function increase(num){
  * @param {number} n
  * @return {number}
  */
-
-
+ function decrease(num){
+  return num - 1;
+ }
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
-
-
+ function add(num1,num2){
+  return num1 + num2;
+ }
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
-
-
+ function subtract(num1, num2){
+  return num1 - num2;
+ }
 /**
  * Multiplies two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the product
  */
-
-
+ function multiply(num1, num2){
+  return num1 * num2;
+ }
 /**
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
  * @return {number} the quotient
  */
-
-
+function divide(num1, num2){
+  return num1 / num2;
+ }
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
-
+ function square(num1, num2){
+  return num1 * num1;
+ }
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -68,22 +74,35 @@ function increase(num){
  * @param {number} y
  * @return {number} the result
  */
-
-
+ function calculate(operation,x,y){
+  console.log(operation);
+ }
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
-
+ function isGreaterThan(a,b){
+  if(a > b){
+    return true;
+  } else{
+    return false;
+  }
+ }
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
+ function isLessThan(a,b){
+  if(a < b){
+    return true;
+  } else{
+    return false;
+  }
+ }
 
 
 /**
