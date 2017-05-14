@@ -142,24 +142,31 @@ function areEqual(a,b){
   } else {
     return y;
   }
-
  }
-
-
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
-
+ function isEven(n){
+  if(n % 2 === 0){
+    return true;
+  } else{
+    return false;
+  }
+ }
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
-
+ function isOdd(n){
+  if(n % 2 !== 0){
+    return true;
+  } else{
+    return false;
+  }
+ }
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -171,8 +178,25 @@ function areEqual(a,b){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+ function letterGrade(score, total){
+  var myScore = (score/total);
 
-
+  if(myScore >= 0.9){
+    return 'A';
+  }
+  if(myScore >= 0.8){
+    return 'B';
+  }
+  if(myScore >= 0.7){
+    return 'C';
+  }
+  if(myScore >= 0.6){
+    return 'D';
+  }
+  if(myScore < 0.6){
+    return 'F';
+  }
+}
 /**
  * Checks if a `restaurant` object has a `reviews` property.
  * If it does, increase the property's `reviews` value by 1.
