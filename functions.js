@@ -75,6 +75,7 @@ function divide(num1, num2){
  * @return {number} the result
  */
  function calculate(operation,x,y){
+
   console.log(operation);
  }
 /**
@@ -103,30 +104,46 @@ function divide(num1, num2){
     return false;
   }
  }
-
-
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
-
+function areEqual(a,b){
+  if(a === b){
+    return true;
+  } else{
+    return false;
+  }
+ }
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the smallest number
  */
-
-
+ function minimum(x,y){
+  if(x < y){
+    return x;
+  } else {
+    return y;
+  }
+ }
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
+ function maximum(x,y){
+  if(x > y){
+    return x;
+  } else {
+    return y;
+  }
+
+ }
 
 
 /**
