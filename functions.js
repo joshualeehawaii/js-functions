@@ -12,7 +12,8 @@ function numberToString(num){
  * @return {number}
  */
 function increase(num){
-  return num + 1;
+  return num + 1; //the bet way, immutable
+  //return num++ not the best way
 }
 /**
  * Subtracts one from a given number.
@@ -63,8 +64,9 @@ function divide(num1, num2){
  * @param {number} x, number to be squared
  * @return {number} squared
  */
- function square(num1, num2){
+ function square(num1){
   return num1 * num1;
+  //Math.pow(num1,2);
  }
 /**
  * Performs a mathematical operation on two numbers.
@@ -75,8 +77,8 @@ function divide(num1, num2){
  * @return {number} the result
  */
  function calculate(operation,x,y){
-
-  console.log(operation);
+  console.log(); //write out the equation
+  return add(x,y);
  }
 /**
  * Returns true if `a` is greater than `b`.
@@ -90,6 +92,7 @@ function divide(num1, num2){
   } else{
     return false;
   }
+    //return a > b //this is the best version
  }
 /**
  * Returns true if `a` is less than `b`.
@@ -103,6 +106,7 @@ function divide(num1, num2){
   } else{
     return false;
   }
+  //return a < b //same as above
  }
 /**
  * Returns true if `a` and `b` are equal.
@@ -116,6 +120,7 @@ function areEqual(a,b){
   } else{
     return false;
   }
+  //return a === b //same as above
  }
 /**
  * Returns the smallest value of two numbers.
@@ -184,16 +189,15 @@ function areEqual(a,b){
   if(myScore >= 0.9){
     return 'A';
   }
-  if(myScore >= 0.8){
+  else if(myScore >= 0.8){
     return 'B';
   }
-  if(myScore >= 0.7){
+  else if(myScore >= 0.7){
     return 'C';
   }
-  if(myScore >= 0.6){
+  else if(myScore >= 0.6){
     return 'D';
-  }
-  if(myScore < 0.6){
+  } else {
     return 'F';
   }
 }
@@ -204,8 +208,13 @@ function areEqual(a,b){
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
- function incrementReviews(obj) {
-
+ function incrementReviews(restaurant) {
+  if(restaurant.hasOwnProperty("reviews")){
+    restaurant.reviews ++;
+  } else {
+    restaurant.reviews = 1;
+  }
+    return restaurant;
  }
 /**
  * Joins two strings with a space.
